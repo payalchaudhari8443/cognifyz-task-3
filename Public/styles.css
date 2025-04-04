@@ -1,0 +1,34 @@
+/* Custom Styles */
+.animate-header {
+    animation: fadeIn 1s ease-in;
+}
+
+.animate-card {
+    transition: transform 0.3s ease;
+}
+
+.animate-card:hover {
+    transform: scale(1.05);
+}
+
+.btn-hover {
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-hover:hover {
+    background-color: #0d6efd;
+    transform: translateY(-2px);
+}
+
+/* Animation Keyframes */
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(-20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .animate-card {
+        margin-top: 20px;
+    }
+}
